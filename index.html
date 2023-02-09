@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>AwesomeProject1</title>
+  </head>
+  <body class=".bg">
+    <audio id="forestMusic" src="docs\assets\MainForestSound.mp3"></audio>
+    <audio id="cityMusic" src="docs\assets\MainCitySound.mp3"></audio>
+    <audio id="mountainMusic" src="docs\assets\MainMountainSound.mp3"></audio>
+    <audio id="startGameMusic" src="docs/assets/selectMap.mp3"></audio>
+    <audio id="winMusic" src="docs/assets/Win!.mp3"></audio>
+    <audio id="powerUpMusic" src="docs/assets/PowerUp.mp3"></audio>
+    <nav>
+      <h1>ridingHood.innerHTML(wolf)</h1>
+      <div id="maps">
+        <button id="forest-button">Forest</button>
+        <button id="city-button">City</button>
+        <button id="mountain-button">Mountain</button>
+        <button id="new-game-button" class="hidden">New Game</button>
+      </div>
+    </nav>
+    <!-- <div style="display:inline-block; position: relative;"> 
+      <div id="thunder" style="background-color: rgba(255, 255, 0, 0.605); position: absolute; top: 0; right: 0; bottom: 0; left: 0; opacity: 0; pointer-events: none;"></div> -->
+    <canvas id="canvas" class="hidden" width="1280px" height="480px" style="border: 5px solid #00000064"></canvas>
+  <!-- </div> -->
+    
+
+    <div id="rules" class=>
+<!--       <h2>Rules</h2> -->
+      <p>
+        <span class="largerText">Once upon a time,</span> there were two little sisters, Red Riding Hood and
+        Yellow Riding Hood, who lived in a forest. On the other side of that
+        forest lived their grandma, whose affection the two sisters rabidly
+        competed for. On grandma’s birthday, whoever got to her house with their
+        baskets full of gifts would definitely win grandma’s affection forever
+        after. <span class="largeText">But we all know how fierce siblings’ competition can be…</span> 
+      </p>
+      <p>
+        You can choose to be either <span id="red">Red Riding Hood</span> or
+        <span id="yellow">Yellow Riding Hood</span>.
+      </p>
+      <p>
+        <span class="largeText">To win:</span> you must be the first one to reach grandma’s house OR tap into your inner wolf and devour your sister!
+      </p>
+      
+    </div>
+
+    <div id="controls">
+      <div class="image"><img src="docs/assets/wasd_controler.png" alt="Red Player controls"></div>
+      <div class="image"><img src="docs/assets/arrow_controler.png" alt="Yellow Player Controls"></div>      
+    </div>
+
+    <div id="containerScore">
+      <p id="score">Score</p>
+      <span id="RedScore">0</span>
+      <span id="YellowScore">0</span>
+    </div>
+
+    <!--       <div id="controls">Controls</div>
+      <p>
+        Controls: <span id="red">Red Riding Hood</span>: Up W Down S Left A
+        Right D <span id="yellow">Yellow Riding Hood</span>: Up → Down ↓ Left ←
+        Right →
+      </p> -->
+
+    
+
+    
+
+    <script src="./scripts/level.js"></script>
+    <script src="./scripts/maps.js"></script>
+    <script src="./scripts/components.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
